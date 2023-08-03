@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="dataCounter">
+        <div class="dataInputs">
+            <div class="dataInput">
+                <h1>DAY</h1>
+                <input type="number" id="DD" placeholder="DD">
+            </div>
+            <div class="dataInput">
+                <h1>MONTH</h1>
+                <input type="number" id="MM" placeholder="MM">
+            </div>
+            <div class="dataInput">
+                <h1>YEAR</h1>
+                <input type="number" id="YYYY" placeholder="YYYY">
+            </div>
+        </div>
+        <div class="buttonContainer">
+            <button class="generateBtn">
+                <i class='bx bxs-chevrons-down'></i>
+            </button>
+            <hr>
+        </div>
+        <div class="datas">
+            <div class="data years">
+                <h1><span class="yearSpan">--</span>years</h1>
+            </div>
+            <div class="data months">
+                <h1><span class="monthSpan">--</span>months</h1>
+            </div>
+            <div class="data days">
+                <h1><span class="daySpan">--</span>days</h1>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

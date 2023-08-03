@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: sans-serif;
+}
+body{
+    max-width: 1440px;
+    height: 100vh;
+
+    margin: 0 auto;
+    background-color: #ebeaea;
+
+    display: grid;
+    place-content: center;
+}
+.warning{
+    color: red !important;
+    border-color: red !important;
+    outline-color: red !important;
+}
+.dataCounter{
+    width: 720px;
+    height: 600px;
+    border-radius: 20px 20px 200px 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.120);    
+    background-color: white;
+
+    padding: 2.4rem;
+}
+
+.dataInputs{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 2.4rem;
+}
+.dataInput{
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: .6rem;
+}
+.dataInput h1{
+    height: 10%;
+    font-size: 14.8px;
+    color: grey;
+    letter-spacing: 2.2px; 
+}
+.dataInput input{
+    height: 88%;
+    width: 100%;
+    font-size: 2.2rem;
+    padding: .8rem;
+
+    border: 1px solid grey;
+    outline-color: black;
+    border-color: green;
+}
+.buttonContainer{
+    width: 100%;
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    isolation: isolate;
+}
+.buttonContainer hr{
+    width: 100%;
+    border-color: rgba(128, 128, 128, 0.200);
+}
+.buttonContainer button{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: blueviolet;
+    flex-shrink: 0;
+
+    border: none;
+    color: white;
+    font-size: 2.4rem;
+    cursor: pointer;
+    transition: border-color 200ms,box-shadow 400ms;
+}
+.buttonContainer button:hover{
+    box-shadow: 0 0 10px blueviolet;
+    border: 2px solid white;
+}
+.buttonContainer button i{
+    transform: translateY(4px);
+}
+
+.datas{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+
+    font-size: 2.4rem;
+    padding-left: 1rem;
+}
+.data h1{
+    display: flex;
+    gap: 14px;
+    font-weight: 900;
+}
+span{
+    letter-spacing: 6px;
+    color: blueviolet;
+}
+
+@media (max-width:778px) {
+    .dataCounter{
+        width: 600px;
+        height: 480px;
+    }
+
+    .dataInputs{
+        gap: 3rem;
+    }
+    .dataInput h1{
+        font-size: 12px;
+    }
+    .dataInput input{
+        font-size: 1.8rem;
+    }
+    .buttonContainer button{
+        width: 68px;
+        height: 68px;
+    }
+    .datas{
+        font-size: 1.88rem;
+        padding-left: 1.2rem;
+    }
+}
+@media (max-width:640px) {
+    .dataCounter{
+        width: 400px;
+        height: 480px;
+    }
+    .dataInputs{
+        gap: .8rem;
+    }
+    .dataInput input{
+        font-size: 1.34rem;
+    }
+    .buttonContainer button{
+        position: relative;
+        right: 42%;
+    }
+    hr{
+        position: relative;
+        right: -10%;
+        transform: scaleX(1.22);
+        z-index: -1;
+    }
+    .buttonContainer button{
+        width: 60px;
+        height: 60px;
+        font-size: 2rem;
+    }
+    .datas{
+        font-size: 1.72rem;
+    }
+}
+@media (max-width:440px){
+    body > *{transform: scale(.8);}
+}
+@media (max-width:340px){
+    body > *{transform: scale(.66);}
+}
